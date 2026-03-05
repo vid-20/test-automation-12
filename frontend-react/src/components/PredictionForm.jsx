@@ -83,7 +83,7 @@ const PredictionForm = ({ setPrediction }) => {
 
     setIsLoading(true);
     try {
-      const res = await fetch("http://localhost:5001/predict", {
+      const res = await fetch("https://test-automation-12.onrender.com//predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
